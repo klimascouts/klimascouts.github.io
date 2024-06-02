@@ -8,7 +8,12 @@
 </head>
 <body>
     <nav class="navbar">
-        <ul>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul id="nav-links">
           <li><a href="#">Start</a></li>
           <li><a href="#about">Mach mit!</a></li>
           <li><a href="#trending">Aktuell</a></li>
@@ -17,6 +22,9 @@
           <li><a href="https://www.gymnasium-langenhagen.de" class="navlink"><img class="navimage" src="./src/img/logo.png" alt="Zurück zur Homepage"></a></li>
         </ul>
     </nav>
+    <div class="container">
+        <h1 id="text"></h1>
+    </div>
     <div class="container">
         <h1 id="text"></h1>
     </div>
@@ -187,32 +195,58 @@
         </script>
     </section>
 
-    <section class="mach-mit-box" id="trending">
+    <section class="mach-mit-box" id="projects">
         <h1 class="heading" id="about">Aktuell</h1>
         <p class="paragraph">
             Die Klimascouts gibt es schon seit 2022. In der Zeit haben wir einige echt coole Projekte auf die Beine gestellt, die ihr euch hier anschauen könnt!
         </p>
-        <h1 class="heading small">#3 Begrünung</h1>
-        <p class="paragraph smaller">Aktuell wollen wir die langweiligen und tristen Innenhöfe der Schule begrünen! Wir haben für euch mal ein Video aufgenommen, wo ihr unsere Fortschritte seht! <br>Viel Spaß beim anschauen und mitverfolgen!
+        <h1 class="heading small">#3 Grüner Innenhof</h1>
+        <p class="paragraph x-small">Aktuell wollen wir die langweiligen und tristen Innenhöfe der Schule begrünen! Wir haben für euch mal ein Video aufgenommen, wo ihr unsere Fortschritte seht! <br>Viel Spaß beim anschauen und mitverfolgen!
         </p>
         <div class="video-container">
             <video controls>
-                <source src="./src/vid/Begruenung.mp4" type="video/mp4">
+                <source src="./src/vid/gvb.mp4" type="video/mp4">
                 Dein Browser unterstützt das Video leider nicht.
             </video>
         </div>
-        <h1 class="heading small">#2 ???</h1>
-        <p class="paragraph smaller">Irgendwas was ich nicht weiß, muss ich noch mal auf IServ schauen!
+        <h1 class="heading small">#2 E-Books zur Nachhaltigkeit</h1>
+        <p class="paragraph x-small">Nachhaltigkeit - das ist ein großes Thema! Zu einigen wichtigen Aspekten haben wir da mal E-Books erstellt!<br><br>Viel Spaß beim durchlesen!
         </p>
-        <h1 class="heading small">#1 Wassersparen</h1>
-        <p class="paragraph smaller">Wassersparen ist aktuell wichtiger denn je, deshalb haben sich die Klimascouts zusammengesetzt und ein Projekt ins leben gerufen!</p>
+        <h1 class="heading small">#1 Water Savers</h1>
+        <p class="paragraph x-small">Wassersparen ist aktuell wichtiger denn je, deshalb haben sich die Klimascouts da mal zusammengesetzt und ein Projekt ins leben gerufen!</p>
         <div class="video-container">
             <video controls>
-                <source src="./src/vid/Begruenung.mp4" type="video/mp4">
+                <source src="./src/vid/gvw.mp4" type="video/mp4">
                 Dein Browser unterstützt das Video leider nicht.
             </video>
         </div>
         <h1 class="heading smaller">Tipps zum Wassersparen</h1>
+        <p class="x-small">1. Wasser abstellen, wenn man sich einseift!</p>
+        <div class="video-container">
+            <video controls>
+                <source src="./src/vid/kv1.mp4" type="video/mp4">
+                Dein Browser unterstützt das Video leider nicht.
+            </video>
+        </div>
+        <p class="x-small">2. Nicht zu lange baden oder duschen</p>
+        <div class="video-container">
+            <video controls>
+                <source src="./src/vid/kv2.mp4" type="video/mp4">
+                Dein Browser unterstützt das Video leider nicht.
+            </video>
+        </div>        <p class="x-small">3. Wenn möglich Geschirr nicht von Hand abwaschen, sondern die Spülmaschine laufen lassen!</p>
+        <div class="video-container">
+            <video controls>
+                <source src="./src/vid/kv3.mp4" type="video/mp4">
+                Dein Browser unterstützt das Video leider nicht.
+            </video>
+        </div>        <p class="x-small">4. Einen Sparspülkasten in die Toilette einbauen!</p>
+        <div class="video-container kc">
+            <video controls>
+                <source src="./src/vid/kv4.mp4" type="video/mp4">
+                Dein Browser unterstützt das Video leider nicht.
+            </video>
+        </div>
     
     <script src="./src/js/main.js"></script>
 </body>
