@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klimascouts</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="#">Start</a></li>
+          <li><a href="#about">Mach mit!</a></li>
+          <li><a href="#trending">Aktuell</a></li>
+          <li><a href="#co2">CO2-Fußabdruck</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="https://www.gymnasium-langenhagen.de" class="navlink"><img class="navimage" src="./src/img/logo.png" alt="Zurück zur Homepage"></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 id="text"></h1>
+    </div>
+
+    <section class="mach-mit-box" id="about">
+        <h1 class="heading" id="about">Mach mit!</h1>
+        <p class="paragraph">
+            Hey, bist du voll im Umweltschutz-Modus? Cool, wir auch! Willkommen bei der Klimascouts-AG! Wir sind das Team, das die Zukunft unserer Schule grüner machen will. Plastikverschwendung? Energiesparen? Grünere Schule? Wir haben da Ideen! <br><br>
+    
+            Wir sind offen für alle, von allen Jahrgangsstufen, denn je mehr Köpfe, desto mehr Ideen, oder? Zusammen planen wir Projekte, sowohl in der Schule als auch in Langenhagen. Kreativität, Teamwork und Spaß an der Sache sind dabei unsere wichtigsten Werkzeuge. <br><br>
+    
+            Also, wenn du Lust hast, die Welt ein bisschen grüner zu machen, schließ dich uns an! Frag einfach Frau von Roux oder Herrn Hecht! Wir freuen uns auf dich!
+        </p>
+    </section>
+
+    <section class="mach-mit-box" id="trending">
+        <h1 class="heading" id="about">Aktuell</h1>
+        <p class="paragraph">
+            Aktuell wollen wir die langweiligen und tristen Innenhöfe der Schule begrünen! Wir haben für euch mal ein Video aufgenommen, wo ihr unsere Fortschritte seht! <br>Viel Spaß beim anschauen und mitverfolgen!
+        </p>
+        <div class="video-container">
+            <video controls>
+                <source src="./src/vid/Begruenung.mp4" type="video/mp4">
+                Dein Browser unterstützt das Video leider nicht.
+            </video>
+        </div>
+    </section>
+
+    <section id="co2" class="mach-mit-box">
+        <h1 class="heading">CO2-Fußabdruck</h1>
+        <p class="paragraph">Seid ihr bereit, euren CO2-Fußabdruck zu checken und zu reduzieren? Mit unserem coolen Test könnt ihr herausfinden, wie umweltfreundlich euer Lebensstil wirklich ist. Lasst uns gemeinsam die Welt ein bisschen grüner machen!</p>
+        <div class="test">
+            <div class="form-group">
+                <label for="car_km">Wie viele Kilometer fährst du pro Jahr mit dem Auto?</label>
+                <select id="car_km">
+                    <option value="50">Weniger als 1.000 km</option>
+                    <option value="250">1.000 - 5.000 km</option>
+                    <option value="750">5.000 - 10.000 km</option>
+                    <option value="1500">10.000 - 20.000 km</option>
+                    <option value="3000">Mehr als 20.000 km</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="electricity">Wie hoch ist dein jährlicher Stromverbrauch in kWh?</label>
+                <select id="electricity">
+                    <option value="475">Weniger als 1.000 kWh</option>
+                    <option value="950">1.000 - 2.000 kWh</option>
+                    <option value="1425">2.000 - 3.000 kWh</option>
+                    <option value="1900">3.000 - 4.000 kWh</option>
+                    <option value="2375">Mehr als 4.000 kWh</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="flights">Wie oft fliegst du pro Jahr?</label>
+                <select id="flights">
+                    <option value="0">Gar nicht</option>
+                    <option value="360">1-2 Mal</option>
+                    <option value="720">3-5 Mal</option>
+                    <option value="1800">6-10 Mal</option>
+                    <option value="3600">Mehr als 10 Mal</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="heating">Wie heizt ihr bei euch Zuhause?</label>
+                <select id="heating">
+                    <option value="0">Garnicht</option>
+                    <option value="2000">Elektrische Heizung</option>
+                    <option value="1500">Gasheizung</option>
+                    <option value="2500">Ölheizung</option>
+                    <option value="500">Zentralheizung mit erneuerbaren Energien</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="meat">Wie oft isst du Fleisch?</label>
+                <select id="meat">
+                    <option value="3000">Täglich</option>
+                    <option value="2000">Mehrmals pro Woche</option>
+                    <option value="1000">Einmal pro Woche</option>
+                    <option value="500">Seltener als einmal pro Woche</option>
+                    <option value="0">Nie (Vegetarier/Veganer)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="clothes">Wie oft kaufst du neue Kleidung?</label>
+                <select id="clothes">
+                    <option value="500">Monatlich</option>
+                    <option value="250">Alle 3-6 Monate</option>
+                    <option value="100">Einmal im Jahr</option>
+                    <option value="50">Seltener als einmal im Jahr</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="living_area">Wie groß ist deine Wohnfläche?</label>
+                <select id="living_area">
+                    <option value="500">Weniger als 50 m²</option>
+                    <option value="1000">50-100 m²</option>
+                    <option value="1500">100-150 m²</option>
+                    <option value="2000">150-200 m²</option>
+                    <option value="2500">Mehr als 200 m²</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="vehicle">Welche Art von Fahrzeug besitzen du und deine Familie?</label>
+                <select id="vehicle">
+                    <option value="0">Kein Fahrzeug</option>
+                    <option value="500">Elektroauto</option>
+                    <option value="1000">Hybridfahrzeug</option>
+                    <option value="2000">Benzin-/Dieselfahrzeug</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="public_transport">Wie oft benutzt du öffentliche Verkehrsmittel, gehst zu Fuß oder fährst mit dem Fahrrad, anstatt das Auto zu nehmen?</label>
+                <select id="public_transport">
+                    <option value="0">Täglich</option>
+                    <option value="50">Mehrmals pro Woche</option>
+                    <option value="100">Einmal pro Woche</option>
+                    <option value="200">Seltener als einmal pro Woche</option>
+                    <option value="400">Nie</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="local_food">Wie oft kaufst du regionale und saisonale Lebensmittel?</label>
+                <select id="local_food">
+                    <option value="0">Immer</option>
+                    <option value="100">Häufig</option>
+                    <option value="200">Manchmal</option>
+                    <option value="300">Selten</option>
+                    <option value="400">Nie</option>
+                </select>
+            </div>
+            <button onclick="calculateCO2()">Berechnen</button>
+            <h2 id="result"></h2>
+        </div>
+    
+        <script>
+            function calculateCO2() {
+                // Erhalte die ausgewählten Werte
+                var car_km = document.getElementById('car_km').value;
+                var electricity = document.getElementById('electricity').value;
+                var flights = document.getElementById('flights').value;
+                var heating = document.getElementById('heating').value;
+                var meat = document.getElementById('meat').value;
+                var clothes = document.getElementById('clothes').value;
+                var living_area = document.getElementById('living_area').value;
+                var vehicle = document.getElementById('vehicle').value;
+                var public_transport = document.getElementById('public_transport').value;
+                var local_food = document.getElementById('local_food').value;
+    
+                // Berechne die Gesamtemissionen
+                var totalEmissions = parseFloat(car_km) + parseFloat(electricity) + parseFloat(flights) + parseFloat(heating) +
+                                     parseFloat(meat) + parseFloat(clothes) + parseFloat(living_area) + parseFloat(vehicle) +
+                                     parseFloat(public_transport) + parseFloat(local_food);
+    
+                // Umrechnung in Tonnen, falls über 1000 kg
+                var totalEmissionsInTons = totalEmissions / 1000;
+    
+                // Berechne die Anzahl der benötigten Erden
+                var averageGlobalFootprintPerCapita = 1000; // Durchschnittlicher globaler CO2-Fußabdruck in kg pro Person
+                var numberOfEarths = totalEmissions / averageGlobalFootprintPerCapita;
+    
+                // Zeige das Ergebnis an
+                var resultText = 'Dein jährlicher CO2-Fußabdruck beträgt: ';
+                resultText += totalEmissionsInTons.toFixed(2) + ' Tonnen CO2';
+                resultText += '. Wenn jeder Mensch so leben würde, bräuchten wir ' + numberOfEarths.toFixed(0) + ' Erden.';
+    
+                document.getElementById('result').innerText = resultText;
+            }
+        </script>
+    </section>
+
+    <section class="mach-mit-box" id="trending">
+        <h1 class="heading" id="about">Aktuell</h1>
+        <p class="paragraph">
+            Die Klimascouts gibt es schon seit 2022. In der Zeit haben wir einige echt coole Projekte auf die Beine gestellt, die ihr euch hier anschauen könnt!
+        </p>
+        <h1 class="heading small">#3 Begrünung</h1>
+        <p class="paragraph smaller">Aktuell wollen wir die langweiligen und tristen Innenhöfe der Schule begrünen! Wir haben für euch mal ein Video aufgenommen, wo ihr unsere Fortschritte seht! <br>Viel Spaß beim anschauen und mitverfolgen!
+        </p>
+        <div class="video-container">
+            <video controls>
+                <source src="./src/vid/Begruenung.mp4" type="video/mp4">
+                Dein Browser unterstützt das Video leider nicht.
+            </video>
+        </div>
+        <h1 class="heading small">#2 ???</h1>
+        <p class="paragraph smaller">Irgendwas was ich nicht weiß, muss ich noch mal auf IServ schauen!
+        </p>
+    
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+  @keyframes blendin {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: white
+  }
+  
+  body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    animation: blendin 3s ease-in-out forwards;
+  }
+
+  body {
+      background: linear-gradient(to bottom, #32533d 0%, #1e3a27 25%, #0e291d 50%, #052617 75%, #011a10 100%);
+    }
+
+    #text {
+      font-size: 5vw;
+      background: -webkit-linear-gradient(45deg, #4a90e2, #8400ff); /* Safari 5.1-6.0 */
+      background: -o-linear-gradient(45deg, #4a90e2, #8400ff); /* Opera 11.1-12.0 */
+      background: -moz-linear-gradient(45deg, #4a90e2, #8400ff); /* Firefox 3.6-15 */
+      background: linear-gradient(45deg, #4a90e2, #8a2be2); /* Standard-Syntax */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @media only screen and (max-width: 768px) {
+        font-size: 15vw;
+      }
+    }
+    
+    .container {
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      text-align: center;
+    }
+
+    .navbar {
+      background-color: rgb(0, 0, 0, 0.6);
+      border-radius: 25px; /* Adjust border-radius to control the roundness */
+      padding: 10px 20px; /* Adjust padding to control spacing */
+      margin: 0 10%;
+      box-shadow: 0 5px 40px rgb(255, 255, 255, 0.2);
+    }
+    
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    .navbar ul li {
+      display: inline;
+    }
+    
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 1.5vw; /* Adjust padding to control spacing */
+      font-size: 200%;
+      transition: text-shadow 500ms;
+    }
+    
+    .navbar ul li a:hover {
+      color: white;
+      text-shadow: 0 5px 20px;
+      transition: text-shadow 500ms;
+    }
+
+    .mach-mit-box {
+      background-color: rgba(255, 255, 255, 0.2); /* Hintergrundfarbe mit Transparenz */
+      padding: 20px; /* Innenabstand der Box */
+      border-radius: 10px; /* Runde Ecken */
+      margin: 20px 10%; /* Abstand von oben und unten, seitlich 10% der Breite des Bildschirms */
+    }
+
+  .heading {
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    background: -webkit-linear-gradient(45deg, #4a90e2, #8400ff); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(45deg, #4a90e2, #8400ff); /* Opera 11.1-12.0 */
+    background: -moz-linear-gradient(45deg, #4a90e2, #8400ff); /* Firefox 3.6-15 */
+    background: linear-gradient(45deg, #4a90e2, #8a2be2); /* Standard-Syntax */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .paragraph {
+    color: white;
+    font-size: 1.5vw;
+    padding: 0 10%;
+    text-align: center;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.video-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.video-overlay .play-button {
+    font-size: 32px;
+}
+
+.test {
+  margin: 0 10%;
+
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+  color: white;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.25vw;
+  text-align: center
+}
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-size: 1vw;
+  color: black;
+  text-align: center;
+}
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.5s;
+}
+button:hover {
+  background-color: #218838;
+  transition: background-color 0.5s;
+}
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+.navimage {
+  display: inline;
+  width: 30px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.navlink {
+  padding: 0 !important;
+}
+
+.small {
+  font-size: 2.5svw;
+}
+
+.smaller {
+  font-size: 1.25vw;
+}
