@@ -10,6 +10,7 @@
 }
 
 html {
+    font-size: 16px; /* Basisgröße */
     scroll-behavior: smooth;
     color: white;
 }
@@ -20,13 +21,11 @@ body {
     font-style: normal;
     animation: blendin 3s ease-in-out forwards;
     background: linear-gradient(to bottom, #32533d 0%, #1e3a27 25%, #0e291d 50%, #052617 75%, #011a10 100%);
+    font-size: 1rem; /* Basisgröße */
 }
 
 #text {
-    font-size: 5vw;
-    background: -webkit-linear-gradient(45deg, #4a90e2, #8400ff);
-    background: -o-linear-gradient(45deg, #4a90e2, #8400ff);
-    background: -moz-linear-gradient(45deg, #4a90e2, #8400ff);
+    font-size: 5vw; /* Dynamische Größe basierend auf der Breite des Viewports */
     background: linear-gradient(45deg, #4a90e2, #8a2be2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -66,7 +65,7 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 2rem; /* Adjust font size */
+    font-size: 2rem; /* Große Schrift für Desktop */
     transition: text-shadow 500ms;
 }
 
@@ -86,19 +85,16 @@ body {
 
 .heading {
     color: white;
-    font-size: 4rem; /* Adjust font size */
+    font-size: 4rem; /* Große Schrift für Desktop */
     text-align: center;
-    background: -webkit-linear-gradient(45deg, #4a90e2, #8400ff);
-    background: -o-linear-gradient(45deg, #4a90e2, #8400ff);
-    background: -moz-linear-gradient(45deg, #4a90e2, #8400ff);
-    background: linear-gradient(45deg, #4a90e2, #8a2be2);
+    background: linear-gradient(45deg, #4a90e2, #8400ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .paragraph {
     color: white;
-    font-size: 1.5rem; /* Adjust font size */
+    font-size: 1.5rem; /* Standardgröße */
     padding: 0 10%;
     text-align: center;
 }
@@ -153,7 +149,7 @@ h1, h2 {
 label {
     display: block;
     margin-bottom: 5px;
-    font-size: 1.25rem; /* Adjust font size */
+    font-size: 1.25rem; /* Standardgröße */
     text-align: center;
 }
 
@@ -163,7 +159,7 @@ select {
     border: 1px solid #ddd;
     border-radius: 15px;
     box-sizing: border-box;
-    font-size: 1rem; /* Adjust font size */
+    font-size: 1rem;
     color: black;
     text-align: center;
 }
@@ -176,7 +172,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.2rem; /* Standardgröße */
     transition: background-color 0.5s;
 }
 
@@ -204,16 +200,16 @@ button:hover {
 }
 
 .small {
-    font-size: 2.5rem; /* Adjust font size */
+    font-size: 2.5rem; /* Standardgröße */
 }
 
 .smaller {
-    font-size: 2rem; /* Adjust font size */
+    font-size: 2rem; /* Standardgröße */
     text-align: center;
 }
 
 .x-small {
-    font-size: 1.5rem; /* Adjust font size */
+    font-size: 1.5rem; /* Standardgröße */
     text-align: center;
 }
 
@@ -234,42 +230,66 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  .navbar ul {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      position: absolute;
-      top: 60px;
-      left: 0;
-      z-index: 999;
-  }
+    html {
+        font-size: 14px; /* Kleinere Basisgröße auf Handys */
+    }
 
-  .navbar ul.show {
-      display: flex;
-      animation: slideIn 0.5s forwards;
-  }
-  
-  .hamburger-menu {
-      display: flex;
-  }
+    body {
+        font-size: 0.9rem;
+    }
 
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-  }
+    .heading {
+        font-size: 2.5rem; /* Kleinere Schrift auf Handys */
+    }
+
+    .paragraph {
+        font-size: 1rem; /* Kleinere Schrift auf Handys */
+    }
+
+    .navbar ul li a {
+        font-size: 1.6rem; /* Kleinere Schriftgröße auf Handys */
+    }
+
+    button {
+        font-size: 1rem; /* Kleinere Schrift auf Handys */
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 999;
+    }
+
+    .navbar ul.show {
+        display: flex;
+        animation: slideIn 0.5s forwards;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
 }
 
 @keyframes slideIn {
-  from {
-      opacity: 0;
-      transform: translateY(-20px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
