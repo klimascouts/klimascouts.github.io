@@ -81,6 +81,7 @@ body {
     border-radius: 10px;
     margin: 20px auto;
     max-width: 80%;
+    width: 100%;
 }
 
 .heading {
@@ -243,7 +244,7 @@ button:hover {
     }
 
     .paragraph {
-        font-size: 1rem; /* Kleinere Schrift auf Handys */
+        font-size: 1.2rem; /* Kleinere Schrift auf Handys */
     }
 
     .navbar ul li a {
@@ -280,6 +281,27 @@ button:hover {
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
+    }
+
+    /* Boxen sollen den gesamten Bildschirm ausfüllen */
+    .mach-mit-box {
+        padding: 15px;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column; /* Boxen untereinander anordnen */
+        height: 100vh; /* Die Höhe des Viewports ausfüllen */
+        justify-content: space-evenly;
+    }
+
+    .video-container {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        max-width: 100%;
     }
 }
 
